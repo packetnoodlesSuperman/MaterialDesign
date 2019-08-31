@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tvAnimOverridePendingTransition"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="传统页面跳转动画overridePendingTransition"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <TextView
+            android:id="@+id/tvAnimTransitionMakeBasic"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="转场动画--makeBasic"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <TextView
+            android:id="@+id/tvAnimTransitionMakeClipRevealAnimation"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="转场动画--makeClipRevealAnimation"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <TextView
+            android:id="@+id/tvAnimTransitionMakeCustomAnimation"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="转场动画--makeCustomAnimation"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <TextView
+            android:id="@+id/tvAnimTransitionMakeScaleUpAnimation"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="转场动画--makeScaleUpAnimation"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <TextView
+            android:id="@+id/tvAnimTransitionMakeSceneTransitionAnimation"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="转场动画--共享元素"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+</LinearLayout>

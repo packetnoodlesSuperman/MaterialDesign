@@ -12,10 +12,14 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".anim.AnimActivity"/>
+        <activity android:name=".anim.RippleAnimActivity"/>
+        <activity android:name=".anim.RevealEffectAnimActivity"/>
+        <activity android:name=".anim.TransitionAnimActivity"/>
+        <activity android:name=".anim.SVGAnimActivity"/>
     </application>
 
 </manifest>
