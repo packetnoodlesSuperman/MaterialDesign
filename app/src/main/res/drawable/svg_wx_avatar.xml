@@ -4,9 +4,19 @@
         android:height="100dp"
         android:viewportHeight="24"
         android:viewportWidth="24">
+    <!--M = moveto(M X,Y) ：将画笔移动到指定的坐标位置，相当于 android Path 里的moveTo()-->
+    <!--L = lineto(L X,Y) ：画直线到指定的坐标位置，相当于 android Path 里的lineTo()-->
+    <!--H = horizontal lineto(H X)：画水平线到指定的X坐标位置-->
+    <!--V = vertical lineto(V Y)：画垂直线到指定的Y坐标位置-->
+    <!--C = curveto(C X1,Y1,X2,Y2,ENDX,ENDY)：三次贝赛曲线-->
+    <!--S = smooth curveto(S X2,Y2,ENDX,ENDY) 同样三次贝塞尔曲线，更平滑-->
+    <!--Q = quadratic Belzier curve(Q X,Y,ENDX,ENDY)：二次贝赛曲线-->
+    <!--T = smooth quadratic Belzier curveto(T ENDX,ENDY)：映射 同样二次贝塞尔曲线，更平滑-->
+    <!--A = elliptical Arc(A RX,RY,XROTATION,FLAG1,FLAG2,X,Y)：弧线 ，相当于arcTo()-->
+    <!--Z = closepath()：关闭路径（会自动绘制链接起点和终点）-->
     <path
             android:name="check"
-            android:pathData="m228,61c0,0 0.10674,2.11958 -1,3c-7.38283,5.87314 -18.55214,12.61092 -32,22c-18.42566,12.86449 -32.0551,23.927 -44,33c-13.06073,9.92055 -21.93745,17.24387 -25,22c-4.6256,7.18358 -7.70356,16.89508 -9,28c-2.20623,18.89795 -2.44438,26.55292 2,36c6.13946,13.05017 21.56996,27.44368 36,41c16.52365,15.52316 33.64732,24.51013 52,28c18.76866,3.56897 45.32138,8.61847 65,-2c25.52161,-13.7713 54.82257,-57.43802 71,-82c11.6033,-17.61713 16.45313,-36.13719 14,-58c-2.51569,-22.42033 -8.45721,-36.15009 -17,-46c-6.04065,-6.96494 -14.48703,-11.29897 -32,-14c-49.4256,-7.62292 -68.41571,-2.80862 -120,10c-21.19666,5.26323 -37.3288,12.45029 -44,25c-4.90051,9.21873 -4,19 3,30l12,11l17,12l23,10"
-            android:strokeColor="#000000"
-            android:strokeWidth="1.5" />
+            android:pathData="M4,10 L9,16 L20,4"
+            android:strokeColor="#35931d"
+            android:strokeWidth="3" />
 </vector>
