@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+            tools:openDrawer="start"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <!--android:fitsSystemWindows=”true” （触发View的padding属性来给系统窗口留出空间）
+            这个属性可以给任何view设置,只要设置了这个属性此view的其他所有padding属性失效，
+            同时该属性的生效条件是只有在设置了透明状态栏(StatusBar)或者导航栏(NavigationBar)此属性才会生效
+            https://blog.csdn.net/baidu_32472003/article/details/79925766-->
+        <com.google.android.material.navigation.NavigationView
+                android:fitsSystemWindows="true"
+                android:layout_gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <!--将<application>标签的android:supportsRtl属性值设为"true"  布局方向 Right to Left-->
+
+    <!--android:layout_marginStart：
+        如果在LTR布局模式下，该属性等同于android:layout_marginLeft。
+        如果在RTL布局模式下，该属性等同于android:layout_marginRight-->
+    <!--android:layout_marginEnd：
+        如果在LTR布局模式下，该属性等同于android:layout_marginRight。
+        如果在RTL布局模式下，该属性等同于android:layout_marginLeft-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation"/>
+
+</LinearLayout>
