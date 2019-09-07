@@ -30,6 +30,7 @@ public abstract class BaseRepository<T> {
                 }
 
                 @Override
+
                 public void onError(ReqTag reqTag, ErrorBean errorBean) {
                     responseError(reqTag, errorBean);
                 }

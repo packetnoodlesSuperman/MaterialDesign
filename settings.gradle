@@ -1,1 +1,1 @@
-include ':app', ':code', ':jetpack', ':coroutine', ':bugly', ':eventbus', ':rxbinding', ':framework'
+include ':app', ':code', ':jetpack', ':coroutine', ':bugly', ':eventbus', ':rxbinding', ':framework', ':pluginable', ':pluginproxy', ':pluginhook'
