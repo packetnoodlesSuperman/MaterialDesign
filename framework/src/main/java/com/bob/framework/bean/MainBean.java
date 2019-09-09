@@ -1,4 +1,4 @@
-package com.bob.framework.bean;
-
-public class MainBean {
-}
+//package com.bob.framework.bean;
+//
+//public class MainBean {
+//}
