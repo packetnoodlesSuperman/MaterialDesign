@@ -1,6 +1,7 @@
 package com.bob.coroutine.net
 
 import com.bob.coroutine.net.adapter.LiveDataCallAdapterFactory
+import com.bob.coroutine.net.converter.CustomConverterFactory
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import kotlinx.coroutines.*
 import retrofit2.*
@@ -20,6 +21,7 @@ object RetrofitManager {
             baseUrl(ApiService.BASE_URL)
             client(OkHttpManager.okHttpClient)
             addConverterFactory(GsonConverterFactory.create())
+            addConverterFactory(CustomConverterFactory.create())
             addCallAdapterFactory(LiveDataCallAdapterFactory())
             addCallAdapterFactory(CoroutineCallAdapterFactory())
         }.build()

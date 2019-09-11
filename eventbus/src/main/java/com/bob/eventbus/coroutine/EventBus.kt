@@ -6,6 +6,9 @@ import kotlin.coroutines.CoroutineContext
 
 val UI: CoroutineDispatcher = Dispatchers.Main
 
+/**
+ * http://www.imooc.com/article/details/id/291744
+ */
 object EventBus : CoroutineScope {
 
     private val job = SupervisorJob()

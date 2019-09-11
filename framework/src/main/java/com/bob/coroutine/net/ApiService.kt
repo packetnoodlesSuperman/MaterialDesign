@@ -1,8 +1,6 @@
 package com.bob.coroutine.net
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import com.bob.coroutine.bean.BaseBean
+import com.bob.coroutine.base.BaseBean
 import com.bob.coroutine.test.TestBean
 import kotlinx.coroutines.Deferred
 import retrofit2.http.GET

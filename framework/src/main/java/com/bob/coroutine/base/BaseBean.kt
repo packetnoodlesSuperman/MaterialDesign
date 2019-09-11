@@ -1,4 +1,4 @@
-package com.bob.coroutine.bean
+package com.bob.coroutine.base
 
 import java.io.Serializable
 
